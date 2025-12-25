@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+  Based on Plain-Academic template by Vasilios Mavroudis.
+  Keep attribution link as requested by the template author.
+-->
+<html lang="en">
+<head>
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+  {% include nav.html %}
+
+  <div class="container">
+    <div class="row">
+
+      <!-- Main column -->
+      <div class="col-md-8">
+        {{ content }}
+      </div>
+
+      <!-- Sidebar -->
+      <div class="col-md-4" style="margin-top: 20px;">
+        {% include sidebar.html %}
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Template attribution -->
+  <a style="color:#b5bec9;font-size:0.8em; float:right;"
+     href="https://github.com/mavroudisv/plain-academic">Plain Academic</a>
+
+</body>
+</html>

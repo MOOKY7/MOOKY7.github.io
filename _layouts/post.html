@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet" type="text/css">
+
+  <style>
+    /* Small readability boost for posts */
+    .post-meta { color: #777; margin-bottom: 15px; }
+    pre { padding: 12px; }
+  </style>
+</head>
+<body>
+
+  {% include nav.html %}
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-8">
+        <h1>{{ page.title }}</h1>
+
+        <div class="post-meta">
+          {{ page.date | date: "%Y-%m-%d" }}
+          {% if page.tags %}
+            • {{ page.tags | join: ", " }}
+          {% endif %}
+        </div>
+
+        {{ content }}
+      </div>
+
+      <div class="col-md-4" style="margin-top: 20px;">
+        {% include sidebar.html %}
+      </div>
+
+    </div>
+  </div>
+
+  <a style="color:#b5bec9;font-size:0.8em; float:right;"
+     href="https://github.com/mavroudisv/plain-academic">Plain Academic</a>
+
+</body>
+</html>

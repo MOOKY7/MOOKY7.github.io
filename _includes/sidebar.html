@@ -1,0 +1,26 @@
+<!-- Contact Info on the Sidebar -->
+<div style="font-family: 'Oswald', sans-serif; font-size: 32px;">
+  <b>{{ site.author.name }}</b>
+</div>
+<br>
+
+<p><b>{{ site.author.email }}</b></p>
+
+<p>
+  {{ site.author.affiliation }}<br>
+  {{ site.author.location }}<br>
+</p>
+
+<hr>
+
+<!-- Links on the Sidebar -->
+<dd><a href="{{ site.author.links.github }}">GitHub</a></dd>
+{% if site.author.links.scholar and site.author.links.scholar != "" %}
+<dd><a href="{{ site.author.links.scholar }}">Google Scholar</a></dd>
+{% endif %}
+{% if site.author.links.linkedin and site.author.links.linkedin != "" %}
+<dd><a href="{{ site.author.links.linkedin }}">LinkedIn</a></dd>
+{% endif %}
+{% if site.author.links.twitter and site.author.links.twitter != "" %}
+<dd><a href="{{ site.author.links.twitter }}">Twitter/X</a></dd>
+{% endif %}
