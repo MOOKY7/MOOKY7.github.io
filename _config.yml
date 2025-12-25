@@ -1,0 +1,24 @@
+title: "Mookyong Son"
+description: "Blog + portfolio. Interests: JAX, ML, research, engineering."
+# If your site is YOURUSERNAME.github.io, keep baseurl: ""
+# If your site is YOURUSERNAME.github.io/REPO_NAME, set baseurl: "/REPO_NAME"
+baseurl: ""
+url: ""
+
+permalink: /blog/:year/:month/:day/:title/
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+author:
+  name: "Mookyong SOn"
+  email: "you@example.com"
+  affiliation: "Your Department / Company"
+  location: "City, Country"
+  links:
+    github: "https://mooky7.github.io/"
+    scholar: ""
+    linkedin: ""
+    twitter: ""
