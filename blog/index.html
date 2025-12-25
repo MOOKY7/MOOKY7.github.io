@@ -1,0 +1,27 @@
+---
+layout: default
+title: Blog
+---
+
+<h2>Blog</h2>
+
+<p>
+  I write about things I’m learning and building (JAX, ML systems, research notes, experiments).
+</p>
+
+<hr>
+
+{% for post in site.posts %}
+  <h3>
+    <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+  </h3>
+
+  <p style="color:#777;">
+    {{ post.date | date: "%Y-%m-%d" }}
+    {% if post.tags %} • {{ post.tags | join: ", " }}{% endif %}
+  </p>
+
+  <p>{{ post.excerpt }}</p>
+
+  <hr>
+{% endfor %}
