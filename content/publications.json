@@ -1,0 +1,27 @@
+[
+  {
+    "year": "2026",
+    "title": "Statistical foundation of variational Bayes computer models",
+    "authors": "Mookyong Son et al.",
+    "venue": "Journal of Nonparametric Statistics",
+    "url": "https://doi.org/10.1080/10485252.2026.2664197",
+    "note": "Theoretical foundations for variational inference in computer models."
+  },
+  {
+    "year": "2022",
+    "title": "Black Box Variational Bayesian Model Averaging",
+    "authors": "Vojtech Kejzlar, Shrijita Bhattacharya, Mookyong Son, and Tapabrata Maiti",
+    "venue": "The American Statistician",
+    "url": "https://doi.org/10.1080/00031305.2022.2058611",
+    "note": "Variational inference for combining models under uncertainty."
+  },
+  {
+    "year": "2021",
+    "title": "A fast and calibrated computer model emulator",
+    "subtitle": "An empirical Bayes approach",
+    "authors": "Vojtech Kejzlar, Mookyong Son, Shrijita Bhattacharya, and Tapabrata Maiti",
+    "venue": "Statistics and Computing · 31, 49",
+    "url": "https://doi.org/10.1007/s11222-021-10024-8",
+    "note": "Gaussian process emulation, calibration, and posterior consistency."
+  }
+]

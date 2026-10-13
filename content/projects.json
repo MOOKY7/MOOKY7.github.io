@@ -1,0 +1,38 @@
+[
+  {
+    "slug": "march",
+    "name": "MARCH",
+    "field": "Representation transport",
+    "title": "Learn across centers. Keep the biology.",
+    "description": "Learning useful representations when genomic panels, measurement processes, and patient populations differ across centers.",
+    "question": "When does sharing information across centers improve cancer prediction, and when does it preserve unwanted measurement signals?",
+    "approach": "I study latent representations that account for the measurement setting while retaining information needed for the prediction task. The work connects probabilistic modeling, batch covariates, and evaluation across cancer centers.",
+    "evaluation": "Compare raw features and learned representations on matched patient splits. Examine prediction and batch predictability together, then inspect results by center and cancer type. A low batch prediction score alone does not establish transportability.",
+    "next": "Identify which cancers and measurement settings benefit from a shared representation, and test the limits of that sharing.",
+    "tags": ["Multimodal learning", "Distribution shift", "Cancer genomics"]
+  },
+  {
+    "slug": "scgef",
+    "name": "SCGEF",
+    "field": "Learning with incomplete modalities",
+    "title": "A shared view of fragmented genomic data.",
+    "description": "Combining mutation, mutational spectrum, copy number, and structural variant information in heterogeneous GENIE data.",
+    "question": "How can one model use complementary genomic measurements when coverage differs across samples and centers?",
+    "approach": "I develop and evaluate a shared representation for heterogeneous genomic modalities. The data work makes measurement coverage explicit and keeps the distinction between an observed zero and an unmeasured feature visible during cohort construction.",
+    "evaluation": "Compare pooled and local fitting using the same patient partitions. Inspect modality ablations, cancer specific recall, and the accuracy and coverage tradeoff at several confidence thresholds. Zero filling is an explicit baseline choice, not a claim that missing values are biological zeros.",
+    "next": "Connect prediction gains to panel coverage, missing modalities, and feature groups, with uncertainty across repeated splits.",
+    "tags": ["Missing modalities", "Representation learning", "Model evaluation"]
+  },
+  {
+    "slug": "hierarchical-embeddings",
+    "name": "Hierarchical embeddings",
+    "field": "Research direction",
+    "title": "Share structure at the right level.",
+    "description": "Studying how representations can share statistical strength across related groups while retaining meaningful local differences.",
+    "question": "Which parts of a representation should be shared across tasks or populations, and which should remain specific?",
+    "approach": "This direction studies structured sharing through hierarchical embeddings. The aim is to connect flexible representation learning with uncertainty and heterogeneous effects.",
+    "evaluation": "The proposed evaluation varies group sample size, relatedness, and measurement coverage.",
+    "next": "Develop controlled simulations that separate useful sharing from negative transfer before testing broader applications.",
+    "tags": ["Bayesian methods", "Transfer learning"]
+  }
+]

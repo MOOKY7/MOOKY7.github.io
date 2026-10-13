@@ -1,0 +1,12 @@
+{
+  "name": "mookyong-son-research",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs",
+    "new": "node scripts/new-post.mjs"
+  },
+  "engines": { "node": ">=22" },
+  "dependencies": { "marked": "17.0.5" }
+}
